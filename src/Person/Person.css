@@ -1,0 +1,21 @@
+.Person{
+    width: 40%;
+    margin: auto;
+    border: 1px solid rgb(196, 196, 196);
+    box-shadow: 0 2px 3px #ccc;
+    text-align: center;
+    padding: 15px;
+}
+.Person input{
+  text-align: center;
+  border-radius: 20px;
+  border:1px solid rgb(190, 190, 190);
+}
+
+.red{
+  color: red;
+}
+.bold{
+  font-weight: bold;
+  font-size: 2rem;
+}
