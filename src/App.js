@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import mycss from './App.css';
 import Person from './Person/Person';
 
 class App extends Component {
@@ -72,17 +72,17 @@ nameChangeHandler = (event, id)=>{
     };
     let classes = []
     if(this.state.people.length <= 2){
-      classes.push('red');
+      classes.push(mycss.red);
     }
     if(this.state.people.length <= 1){
-      classes.push('bold');
+      classes.push(mycss.bold);
     }
     if(this.state.people.length === 0){
       classes = [];
     }
     return (
 
-        <div className="App">
+        <div className={mycss.App}>
           <p className={classes.join(' ')}>number of people: {this.state.people.length}</p>
           <button style = {style} onClick={this.togglePeopleHandler} >Show Stuff</button>
           {showit}

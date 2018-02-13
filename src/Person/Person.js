@@ -1,5 +1,5 @@
 import React from 'react';
-import './Person.css';
+import personcss from './Person.css';
 
 
 const person = (props) => {
@@ -10,7 +10,7 @@ const person = (props) => {
   //   }
   // };
 	return (
-    <div  className="Person">
+    <div  className={personcss.Person}>
 		<p>I'm a person!!</p> 
 			{/* <button onClick={props.click} >Switch Stuff</button> */}
       <p onClick={props.click}>My name is {props.name}.  I'm trying to learn {props.stuff}</p>
